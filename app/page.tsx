@@ -19,11 +19,6 @@ if (typeof document !== "undefined") {
 
 export default function Page() {
   const [isHovered, setIsHovered] = useState(false)
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
 
   return (
     <div className="relative min-h-screen overflow-hidden">
